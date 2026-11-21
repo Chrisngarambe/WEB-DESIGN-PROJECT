@@ -1,0 +1,41 @@
+.menu{
+    display: flex;
+    gap: 150px;
+    background-color: #003366;
+    color: gold;
+}
+.summary{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+table{
+    margin:auto;
+    border-collapse:collapse;
+    background-color:white;
+    width:40%;
+}
+h1{
+    color: #6161e3;
+    text-align: center;
+}
+h2{
+    color: #6161e3;
+    text-align: center;
+}
+th, td{
+    border:1px solid black;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background-color:#003366;
+    color:white;
+}
+.receipt{
+    text-align: center;
+}
+.payment{
+    text-align: center;
+}
