@@ -11,4 +11,5 @@ function addToCart(price, qty)
 
   document.getElementById("items").innerHTML = totalItems;
   document.getElementById("cost").innerHTML = totalCost + " RWF";
+  document.getElementById("totalAmount").value = totalCost;
 }
