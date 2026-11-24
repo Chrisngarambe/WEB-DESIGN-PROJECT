@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 21, 2026 at 08:32 PM
+-- Generation Time: Nov 24, 2026 at 01:31 PM
 -- Server version: 10.11.16-MariaDB
 -- PHP Version: 8.5.12
 
@@ -56,8 +56,9 @@ CREATE TABLE `order_details` (
 --
 
 CREATE TABLE `product` (
-  `ProductId` int(11) NOT NULL DEFAULT uuid(),
-  `Product Name` text NOT NULL,
+  `ProductId` int(11) NOT NULL,
+  `ProductName` text NOT NULL,
+  `Image` varchar(255) NOT NULL,
   `Category` text NOT NULL,
   `Price` double NOT NULL,
   `Quantity` int(11) NOT NULL,
@@ -128,6 +129,12 @@ ALTER TABLE `orders`
 --
 ALTER TABLE `order_details`
   MODIFY `DetailId` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `ProductId` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
