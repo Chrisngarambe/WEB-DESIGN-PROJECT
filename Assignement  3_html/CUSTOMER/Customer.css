@@ -36,3 +36,26 @@ h4{
 .summary{
   text-align: center;
 }
+body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: changeBackground 15s infinite;
+}
+@keyframes changeBackground {
+    0%{
+        background-image: url(../PICTURES/images.jfif);
+    }
+    25%{
+        background-image: url(../PICTURES/juice.jfif);
+    }
+    50%{
+        background-image: url(../PICTURES/chapati1.jfif);
+    }
+    75%{
+        background-image: url(../PICTURES/rolleggs.jfif);
+    }
+    100%{
+        background-image: url(../PICTURES/images.jfif);
+    }
+}

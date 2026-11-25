@@ -2,7 +2,7 @@
 
 session_start();
 
-$con = mysqli_connect("localhost","root","","auca_canteen");
+$con = mysqli_connect("localhost","root","","auca_canteen2");
 
 if(mysqli_connect_errno())
 {
@@ -23,6 +23,10 @@ if(isset($_POST['role']))
             AND Role='$role'";
 
     $result = mysqli_query($con,$sql);
+    if(!$result)
+    {
+        die("Query failed: " . mysqli_error($con));
+    }
 
     if(mysqli_num_rows($result) > 0)
     {
