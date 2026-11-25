@@ -38,7 +38,7 @@ if(isset($_POST['role']))
 
         if($role == "cashier")
         {
-            header("Location: ../CANTEEN/Cashier.html");
+            header("Location: ../CANTEEN/Cashier.php");
             exit();
         }
         elseif($role == "supervisor")
