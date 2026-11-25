@@ -33,9 +33,7 @@ $productResult =mysqli_query($con,$productQuery);
 <html>
 <head>
     <title>AUCA Canteen - Cashier Dashboard</title>
-    <link rel="stylesheet"
-          type="text/css"
-          href="Cashier.css">
+    <link rel="stylesheet" type="text/css" href="Cashier.css">
 </head>
 
 <body>
