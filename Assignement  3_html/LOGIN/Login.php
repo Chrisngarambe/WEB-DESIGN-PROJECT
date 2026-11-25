@@ -2,7 +2,7 @@
 
 session_start();
 
-$con = mysqli_connect("localhost","root","","auca_canteen2");
+$con = mysqli_connect("localhost","root","","auca_canteen");
 
 if(mysqli_connect_errno())
 {

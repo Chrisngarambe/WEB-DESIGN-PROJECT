@@ -3,7 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
     header("Location: SignUp.html");
     exit;
 }
-$con=mysqli_connect("localhost","root","","auca_canteen");
+$con=mysqli_connect("localhost","root","","auca_canteen2");
 if(mysqli_connect_errno()){
     echo "Can't connect to the DataBase".mysqli_connect_error();
 }
