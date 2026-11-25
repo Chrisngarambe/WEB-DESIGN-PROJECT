@@ -39,12 +39,12 @@ if(isset($_POST['role']))
         }
         elseif($role == "supervisor")
         {
-            header("Location: ../CANTEEN/Supervisor.html");
+            header("Location: ../CANTEEN/Supervisor.php");
             exit();
         }
         elseif($role == "manager")
         {
-            header("Location: ../CANTEEN/Manager.html");
+            header("Location: ../CANTEEN/Manager.php");
             exit();
         }
         elseif($role == "customer")

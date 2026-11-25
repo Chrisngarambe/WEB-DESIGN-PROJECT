@@ -127,6 +127,14 @@ while($order = mysqli_fetch_assoc($ordersResult))
 
         </form>
 
+        <form action="OrderDetails.php" method="post">
+
+          <input type="hidden" name="OrderId" value="<?php echo $order['OrderId']; ?>">
+
+          <input type="submit" value="View Details">
+
+        </form>
+
     </td>
 
 </tr>
