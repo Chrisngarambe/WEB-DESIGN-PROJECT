@@ -23,6 +23,10 @@ if(isset($_POST['role']))
             AND Role='$role'";
 
     $result = mysqli_query($con,$sql);
+    if(!$result)
+    {
+        die("Query failed: " . mysqli_error($con));
+    }
 
     if(mysqli_num_rows($result) > 0)
     {
